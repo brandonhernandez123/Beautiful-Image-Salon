@@ -1,8 +1,8 @@
-const slots = require('../models/slots')
+const { Slots } = require('../models')
 
 const findAllSlots = async (req, res) => {
   try {
-    const allSlots = await slots.findAll()
+    const allSlots = await Slots.findAll()
     res.send(allSlots)
   } catch (error) {
     throw error
@@ -11,9 +11,7 @@ const findAllSlots = async (req, res) => {
 
 const findSlotByPk = async (req, res) => {
   try {
-    const oneSlot = slots.findByPk({
-      where: { id: req.params.slot_id }
-    })
+    const oneSlot = Slots.findByPk(req.params.slot_id)
     res.send(oneSlot)
   } catch (error) {
     console.log('Slot does not exist')
@@ -23,7 +21,7 @@ const findSlotByPk = async (req, res) => {
 
 const newSlot = async (req, res) => {
   try {
-    const createSlot = await slots.create({ ...req.body })
+    const createSlot = await Slots.create({ ...req.body })
     res.send(createSlot)
   } catch (error) {
     throw error
@@ -32,7 +30,7 @@ const newSlot = async (req, res) => {
 
 const updateSlot = async (req, res) => {
   try {
-    const slotToUpdate = await slots.update(
+    const slotToUpdate = await Slots.update(
       { ...req.body },
       { where: { id: req.params.slot_id }, returning: true }
     )
@@ -44,7 +42,7 @@ const updateSlot = async (req, res) => {
 
 const deleteSlot = async (req, res) => {
   try {
-    slots.destroy({
+    Slots.destroy({
       where: { id: req.params.slot_id }
     })
     res.send({

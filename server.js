@@ -9,6 +9,8 @@ const MenServiceRoutes = require('./routes/MenServicesRoutes')
 const ColorServiceRoutes = require('./routes/ColorRoutes')
 const SpecialEventRoutes = require('./routes/SpecialServiceRoutes')
 const OtherServicesRoutes = require('./routes/OtherServicesRoutes')
+const AppointmentRoutes = require('./routes/AppointmentRoutes')
+const SlotRoutes = require('./routes/SlotRoutes')
 const PORT = process.env.PORT || 3001
 
 app.use(cors())
@@ -22,7 +24,9 @@ app.use(
   MenServiceRoutes,
   ColorServiceRoutes,
   SpecialEventRoutes,
-  OtherServicesRoutes
+  OtherServicesRoutes,
+  AppointmentRoutes,
+  SlotRoutes
 )
 
 app.post('/stripe/charge', cors(), async (req, res) => {
