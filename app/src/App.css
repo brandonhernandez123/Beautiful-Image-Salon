@@ -1,0 +1,178 @@
+.App {
+  text-align: center;
+  font-family: 'PT Serif', serif;
+  background-color: rgb(249,241,236);
+  background-color: rgb(249,241,236);
+
+}
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+#navbar {
+  color: pink !important;
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.mb-2 {
+  align-items: center !important;
+  text-align: center;
+  justify-content: center !important;
+}
+
+#apptCard {
+  justify-content: center;
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.title {
+  color: pink;
+}
+.location {
+  color: black;
+}
+
+.homepagetitle {
+  background-image: url('./Images/backgroundroses.png') !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  animation:  5s ease 0s 1 normal forwards;
+  
+
+}
+
+@keyframes animation  {
+	0% {
+		background-position: 50% 0%;
+	}
+
+	100% {
+		background-position: 50% 100%;
+	}
+}
+
+.homepagetitle img {
+  transition: 1s ease;
+  }
+  
+  .homepagetitle img:hover {
+  border-radius:50%;
+  transition: 1s ease;
+  }
+
+.location {
+  background-color: rgb(249,241,236);
+}
+
+
+.locationimage {
+  
+  width: 800px;
+}
+
+.Cinthia {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(249,241,236);
+  
+}
+.about {
+  background-color: rgb(249,241,236);  
+  background-size: cover;
+  
+}
+
+.compname {
+  color: black;
+  font-size: 60px;
+}
+
+.compsub {
+  color: pink;
+  font-size: 30px;
+}
+
+.nav {
+  height: 100px;
+}
+
+.pricing {
+  background-color: black;
+  color: white;
+}
+
+.menu {
+  height: 50%;
+  width: 50%;
+  background-color: rgb(19, 18, 18);
+}
+
+.underline {
+  text-decoration: underline;
+  background-color: rgb(249,241,236);
+}
+
+.cardgroup:hover  {
+  background-color: pink;
+
+}
+
+
+.appointment {
+  background-color: rgb(249,241,236);
+
+}
+
+
+.policy {
+background-color: pink !important; 
+
+}
+
+.modal-content, .policy {
+  background-color: pink !important;
+}
+
+.policybutton {
+  background-color: pink !important;
+  color: black !important;
+}
+
+.policybutton:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+.bg-light, .border {
+  background-color: pink !important;
+}
